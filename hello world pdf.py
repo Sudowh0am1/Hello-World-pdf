@@ -8,10 +8,14 @@ from reportlab.pdfgen.canvas import Canvas
 
 canvas = Canvas("output.pdf", pagesize = LETTER)
 
-#seting font to Times New Roman with 12-point size
-canvas.setFont("Times-Roman", 12)
 print(" type something to be written :")
 myText = input()
+
+print(" enter the font size : ")
+size = input()
+
+#seting font to Times New Roman with 12-point size
+canvas.setFont("Times-Roman", int(size))
 
 print(" select the color :")
 print(" 1. blue  2. green  3. red  4. orange")
